@@ -68,11 +68,11 @@ function game() {
     }
     console.log('Game over')
     if (playerScore > computerScore) {
-        console.log('Player has won the game!');
+        console.log(`Player has won the game! ${playerScore} - ${computerScore}`);
     } else if (playerScore < computerScore) {
-        console.log('Computer has won the game!');
+        console.log(`Computer has won the game! ${computerScore} - ${playerScore}`);
     } else {
-        console.log('Game ended in a draw!')
+        console.log(`Game ended in a draw! ${playerScore} - ${computerScore}`);
     }
 }
 game();
